@@ -1,0 +1,28 @@
+<div>
+    <div class="container">
+        <div class="row">
+          <ng-container *ngFor="let product of products |filterByName :Filtername " >
+            <div class="card col-md-3">
+              <img src="" alt="image-produit">
+              <h4 >{{product.name}}</h4>
+              <p>{{product.description}}</p>
+              <ul>
+                <li>{{product.size}}</li>
+                <li> {{product.weight}}</li>
+                <li>{{product.matter}}</li>
+                <li>{{product.madein}}</li>
+                <li>{{product.year}}</li>
+              </ul>
+              <p><strong>Prix:  </strong>€</p>
+              
+              <a><button  type="button" class="btn btn-primary">Add to Cart</button></a>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+      <div>
+        <input type="text" [(ngModel)]="Filtername">
+        <p>{{Filtername}}</p>
+      </div>
+
+</div>
