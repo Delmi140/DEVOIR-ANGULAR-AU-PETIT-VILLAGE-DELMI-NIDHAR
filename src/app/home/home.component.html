@@ -12,7 +12,7 @@
     <div class="produits">
       <div class="container">
           <div class="row">
-            <ng-container *ngFor="let product of products |filterByName :Filtername " >
+            <ng-container *ngFor="let product of products |filterByName :Filtername |sortByPrice" >
               <div class="card col-md-3">
                 <img src="" alt="image-produit">
                 <h4 >{{product.name}}</h4>
