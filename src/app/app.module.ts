@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { FormsModule } from '@angular/forms';
-import { FilterByNamePipe } from './filter-by-name.pipe'
+import { FilterByNamePipe } from './filter-by-name.pipe';
+import { HeaderComponent } from './header/header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FilterByNamePipe
+    FilterByNamePipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
