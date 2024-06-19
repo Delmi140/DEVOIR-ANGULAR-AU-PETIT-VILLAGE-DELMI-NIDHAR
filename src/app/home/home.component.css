@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Comfortaa:wght@300..700&family=Monoton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap');
+
+@font-face {
+    font-family: "bubbleboddyneue-regular trial";
+    src:
+      local("Tri"),
+      url("../../font/bubbleboddyneue-regular\ trial.ttf") format("truetype") tech(color-COLRv1),
+      
+  }
+  
+p{
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+h1{
+    font-family:"bubbleboddyneue-regular trial"
+}
+
+h2{
+    font-family:"bubbleboddyneue-regular trial"
+}
+h3{
+    font-family:"bubbleboddyneue-regular trial"
+}
+
+.contenaire-présentation{
+    text-align: center;
+    height: 300px;
+    width: 800px;
+    border: solid;
+
+    
+}
+
+.présentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FDD90B;
+    height: 400px;
+
+}
+
+.h2-produit{
+    text-align: center;
+    font-family:"bubbleboddyneue-regular trial";
+    padding-top: 30px;
+    
+   
+}
+
+.contenaire-produit{
+    background-color:#DA001E;
+}
+
+.card{
+    padding: 20px;
+    margin:50px;
+}
+
+.searchproduits{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 30px;
+}

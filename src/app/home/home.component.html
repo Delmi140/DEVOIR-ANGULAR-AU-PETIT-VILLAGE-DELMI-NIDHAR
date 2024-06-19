@@ -1,28 +1,46 @@
-<div>
-    <div class="container">
-        <div class="row">
-          <ng-container *ngFor="let product of products |filterByName :Filtername " >
-            <div class="card col-md-3">
-              <img src="" alt="image-produit">
-              <h4 >{{product.name}}</h4>
-              <p>{{product.description}}</p>
-              <ul>
-                <li>{{product.size}}</li>
-                <li> {{product.weight}}</li>
-                <li>{{product.matter}}</li>
-                <li>{{product.madein}}</li>
-                <li>{{product.year}}</li>
-              </ul>
-              <p><strong>Prix:  </strong>€</p>
-              
-              <a><button  type="button" class="btn btn-primary">Add to Cart</button></a>
-            </div>
-          </ng-container>
+<main>
+  <div class="présentation">
+    <div class="contenaire-présentation">
+      <h1>Au petit village</h1>
+      <p> <strong>Au petit village</strong>  est une entreprise qui confectionne des figurines inspirées de la bande dessinée Astérix et Obélix.  Le savoir-faire et le soucis du détails accompagnent constamment nos équipes expertes pour vous apporter des collections et produits de qualité sur les thèmes ludiques, historiques et culturels qui vous passionnent le plus.</p>
+    </div>
+  </div>
+  <div class="contenaire-produit">
+    <div>
+      <h2 class="h2-produit">catalogue des produits vendus</h2>
+    </div>
+    <div class="produits">
+      <div class="container">
+          <div class="row">
+            <ng-container *ngFor="let product of products |filterByName :Filtername " >
+              <div class="card col-md-3">
+                <img src="" alt="image-produit">
+                <h4 >{{product.name}}</h4>
+                <p>{{product.description}}</p>
+                <ul>
+                  <li>{{product.size}}</li>
+                  <li> {{product.weight}}</li>
+                  <li>{{product.matter}}</li>
+                  <li>{{product.madein}}</li>
+                  <li>{{product.year}}</li>
+                </ul>
+                <p><strong>Prix:  </strong>{{product.price}}€</p>
+                
+                <a><button  type="button" class="btn btn-primary">Add to Cart</button></a>
+              </div>
+            </ng-container>
+          </div>
         </div>
-      </div>
-      <div>
-        <input type="text" [(ngModel)]="Filtername">
-        <p>{{Filtername}}</p>
-      </div>
-
-</div>
+        <div class="searchproduits">
+          <div >
+            <h3>Recherche</h3>
+            <input type="text" [(ngModel)]="Filtername">
+            
+          </div>
+        </div>
+        
+  
+  </div>
+  
+  </div>
+</main>
