@@ -12,9 +12,11 @@
     <div class="produits">
       <div class="container">
           <div class="row">
-            <ng-container *ngFor="let product of products |filterByName :Filtername |sortByPrice" >
+            <ng-container *ngFor="let product of products |filterByName :Filtername | sortByPrice" >
               <div class="card col-md-3">
-                <img class="image-produit-card" src="{{product.imageUrl}}" alt="image-produit">
+                <div class="contenaire-image-produit">
+                  <img class="image-produit-card" src="{{product.imageUrl}}" alt="image-produit">
+                </div>
                 <h4 >{{product.name}}</h4>
                 <p>{{product.description}}</p>
                 <ul>
@@ -23,15 +25,19 @@
                   <li>{{product.matter}}</li>
                   <li>{{product.madein}}</li>
                   <li>{{product.year}}</li>
+                  
                 </ul>
                 <p><strong>Prix:  </strong>{{product.price}}€</p>
                 
-                <a routerLink="product/ {{product.name}} {{product.price}} {{product.description}} "><button  type="button" class="btn btn-primary">Add to Cart</button></a>
+                <a routerLink="product/ {{product.name}}  {{product.price}}  {{product.description}} {{product.descriptionCard}}"><button  type="button" class="btn btn-primary">Add to Cart</button></a>
               </div>
             </ng-container>
           </div>
         </div>
         <div class="searchproduits">
+          <div>
+            <button  type="button" click="sortByPrice()" class="btn btn-primary">Tri</button>
+          </div>
           <div >
             <h3>Recherche</h3>
             <input type="text" [(ngModel)]="Filtername">

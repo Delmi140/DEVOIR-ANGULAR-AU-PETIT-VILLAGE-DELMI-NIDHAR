@@ -57,6 +57,7 @@ h3{
 .card{
     padding: 20px;
     margin:50px;
+    
 }
 
 .searchproduits{
@@ -68,6 +69,11 @@ h3{
 }
 
 .image-produit-card{
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
+   
+}
+
+.contenaire-image-produit{
+    text-align: center;
 }
