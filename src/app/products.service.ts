@@ -14,6 +14,11 @@ export class ProductsService {
     {id:6, name: "Figurine Pirate Barbe Rouge", description: 'À propos de cet article :' , price:19.99 ,size : 'Hauteur:23,5 cm ',weight : 'Poids: 300g', matter:'Matière :Résine', madein:'Fabriqué en :France',year:'Année : 2021', imageUrl :'../assets/image/Figurine-Pirate Barbe Rouge .jpg'}
   ]
 
+  apropos = [
+    {nameapropos: "Astérix"}
+   
+  ]
+
 
 
   constructor() { }
