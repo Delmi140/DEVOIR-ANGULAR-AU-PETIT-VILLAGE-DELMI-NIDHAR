@@ -14,19 +14,28 @@ p{
 }
 
 h1{
-    font-family:"bubbleboddyneue-regular trial"
+    font-family:"bubbleboddyneue-regular trial";
+    font-size: 4em;
 }
 
 h2{
-    font-family:"bubbleboddyneue-regular trial"
+    font-family:"bubbleboddyneue-regular trial";
+    font-size: 2.5em;
 }
 h3{
     font-family:"bubbleboddyneue-regular trial"
 }
+ul{
+    
+  
+    font-family: "Comfortaa", sans-serif;
+    
+  
+  }
 
 .contenaire-présentation{
     text-align: center;
-    height: 300px;
+    height: 250px;
     width: 800px;
     border: solid;
 

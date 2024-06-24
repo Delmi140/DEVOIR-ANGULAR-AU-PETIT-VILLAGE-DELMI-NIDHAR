@@ -9,28 +9,36 @@
   }
 
   h1{
-    font-family:"bubbleboddyneue-regular trial"
+    font-family:"bubbleboddyneue-regular trial";
+    text-align: center;
+    font-size: 4em;
+
   }
   h2{
-    font-family:"bubbleboddyneue-regular trial"
+    font-family:"bubbleboddyneue-regular trial";
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 20px;
   }
   h3{
-    font-family:"bubbleboddyneue-regular trial"
+    font-family:"bubbleboddyneue-regular trial";
+    text-align: center;
   }
   p{
     font-family: "Comfortaa", sans-serif;
+    text-align: center;
   }
 
   .apropos-contenaire{
     background-color: #DA001E;
     display: flex;
-    align-items: center;
+   
     justify-content: space-around;
   }
 
   .apropos{
     width: 500px;
-    text-align: center;
+    
   }
 
   .contact-contenaire{
@@ -43,4 +51,14 @@
   }
   .p-adresse{
     margin-bottom: 0px;
+    padding-bottom: 20px;
   }
+
+  ul{
+    
+  
+    font-family: "Comfortaa", sans-serif;
+    
+  
+  }
+  

@@ -15,7 +15,7 @@ export class ProductsService {
   ]
 
   apropos = [
-    {nameapropos: "Astérix"}
+    {nameapropos: "Au Petit Village"}
    
   ]
 
