@@ -9,10 +9,19 @@
     <div>
       <h2 class="h2-produit">catalogue des produits vendus</h2>
     </div>
+    <div class="searchproduits">
+      <div>
+        <button  type="button" (click)="onSortDirection()" class="btn btn-primary">Tri</button>
+      </div>
+      <div >
+        <h3>Recherche</h3>
+        <input type="text" [(ngModel)]="Filtername">
+      </div>
+    </div>
     <div class="produits">
       <div class="container">
           <div class="row">
-            <ng-container *ngFor="let product of products |filterByName :Filtername | sortByPrice" >
+            <ng-container *ngFor="let product of products |filterByName :Filtername | sortByPrice:['price', SortDirection]" >
               <div class="card col-md-3">
                 <div class="contenaire-image-produit">
                   <img class="image-produit-card" src="{{product.imageUrl}}" alt="image-produit">
@@ -34,18 +43,6 @@
             </ng-container>
           </div>
         </div>
-        <div class="searchproduits">
-          <div>
-            <button  type="button" click="sortByPrice()" class="btn btn-primary">Tri</button>
-          </div>
-          <div >
-            <h3>Recherche</h3>
-            <input type="text" [(ngModel)]="Filtername">
-            
-          </div>
-        </div>
-        
-  
   </div>
   
   </div>

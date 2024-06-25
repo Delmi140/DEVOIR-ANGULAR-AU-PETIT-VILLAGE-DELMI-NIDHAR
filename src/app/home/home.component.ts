@@ -10,10 +10,19 @@ export class HomeComponent  implements OnInit {
 
   Filtername: string ='';
   products: any[] = [];
+  SortDirection = 'asc';
   constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
     this.products = this.productsService.products
+  }
+
+  onSortDirection() {
+    if(this.SortDirection === 'desc'){
+      this.SortDirection = 'asc';
+    }else {
+      this.SortDirection = 'desc';
+    }
   }
   
 
