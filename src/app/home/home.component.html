@@ -7,22 +7,27 @@
   </div>
   <div class="contenaire-produit">
     <div>
-      <h2 class="h2-produit">catalogue des produits vendus</h2>
+      <h2 class="h2-produit">Catalogue des produits vendus</h2>
     </div>
-    <div class="searchproduits">
-      <div>
-        <button  type="button" (click)="onSortDirection()" class="btn btn-primary">Tri</button>
+    <div>
+      <div class="searchproduits">
+        <div>
+          <h4>Tri par prix :</h4>
+          <button  type="button" (click)="onSortDirection()" class="btn btn-primary" id="btn-tri">Tri</button>
+        </div>
+        <div >
+          <h4>Recherche :</h4>
+          <input type="text" [(ngModel)]="Filtername">
+        </div>
       </div>
-      <div >
-        <h3>Recherche</h3>
-        <input type="text" [(ngModel)]="Filtername">
-      </div>
+
     </div>
+    
     <div class="produits">
       <div class="container">
-          <div class="row">
+          <div class="row ">
             <ng-container *ngFor="let product of products |filterByName :Filtername | sortByPrice:['price', SortDirection]" >
-              <div class="card col-md-3">
+              <div class="card col-md-6 col-lg-4 mb-">
                 <div class="contenaire-image-produit">
                   <img class="image-produit-card" src="{{product.imageUrl}}" alt="image-produit">
                 </div>
@@ -36,9 +41,9 @@
                   <li>{{product.year}}</li>
                   
                 </ul>
-                <p><strong>Prix:  </strong>{{product.price}}€</p>
+                <p class="p-prix"><strong>Prix: </strong>{{product.price}}€</p>
                 
-                <a routerLink="product/ {{product.name}}  {{product.price}}  {{product.description}} {{product.descriptionCard}}"><button  type="button" class="btn btn-primary">Add to Cart</button></a>
+                <a routerLink="product/ {{product.name}}  {{product.price}}  {{product.description}} {{product.descriptionCard}}"><button  type="button" class="btn btn-primary">Voir le produit</button></a>
               </div>
             </ng-container>
           </div>

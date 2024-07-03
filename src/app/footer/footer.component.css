@@ -32,4 +32,12 @@
     justify-content: space-around;
 
 }
+.p-mise-a-jour-footer{
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+}
 
+.p-copyright{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
